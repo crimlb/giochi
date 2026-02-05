@@ -1,0 +1,415 @@
+/* disabilita lo scrolling a livello globale */
+html,
+body {
+    overflow: hidden;
+    /* rimuove la barra di scorrimento e impedisce lo scroll */
+    height: 100%;
+    /* opzionale, utile in alcuni casi */
+}
+
+body {
+  visibility: hidden; /* nasconde tutto il contenuto */
+}
+
+body.loaded {
+  visibility: visible; /* ri-mostrerà il contenuto */
+}
+
+body {
+    background-image: url("immagini/sfondo.jpg");
+    /* Percorso della tua immagine */
+    background-repeat: no-repeat;
+    /* evita che si ripeta */
+    background-size: cover;
+    /* l’immagine copre tutto lo schermo */
+    background-position: center;
+    /* centrata */
+    background-attachment: fixed;
+    /* resta ferma quando scrolli */
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: rgb(93, 136, 183);
+}
+
+.icone {
+    display: flex;
+    margin-left: 77px;
+    margin-right: 74px;
+    margin-top: 120px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: -50px
+}
+
+.pulsanti {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.bottoneCarta {
+    font-size: 60px;
+    width: 222px;
+    background-color: #cd5c5c;
+    border-right: 5px black solid;
+    border-bottom: 5px gray solid;
+}
+
+.bottoneForbice {
+    font-size: 60px;
+    background-color: #ffb100;
+    border-right: 5px black solid;
+    border-bottom: 5px gray solid;
+}
+
+.bottoneSasso {
+    font-size: 60px;
+    background-color: #5ebad8;
+    border-right: 5px black solid;
+    border-bottom: 5px gray solid;
+}
+
+.bottoneCarta:hover {
+    background-color: #94011e;
+    /* Colore al passaggio del mouse */
+    cursor: pointer;
+    border-right: 3px black solid;
+    border-bottom: 3px black solid;
+}
+
+.bottoneForbice:hover {
+    background-color: #a77602;
+    /* Colore al passaggio del mouse */
+    cursor: pointer;
+    border-right: 3px black solid;
+    border-bottom: 3px black solid;
+}
+
+.bottoneSasso:hover {
+    background-color: #1c6178;
+    /* Colore al passaggio del mouse */
+    cursor: pointer;
+    border-right: 3px black solid;
+    border-bottom: 3px black solid;
+}
+
+.risultato {
+    display: flex;
+    font-family: system-ui;
+    font-size: 23px;
+    margin-top: -7px;
+    margin-left: 409px;
+    margin-right: 400px;
+    color: #f4f2f1;
+    text-shadow: 1.5px 1.5px #0c0c0c;
+    justify-content: space-evenly;
+}
+
+.nomi {
+    margin-top: -35px;
+    font-size: 30px;
+    font-family: cursive;
+    display: flex;
+    color: #f4f2f1;
+    text-shadow: 1.5px 1.5px #0c0c0c;
+    justify-content: center;
+    margin-right: 2px
+}
+
+.tu {
+    margin-left: -75px;
+}
+
+.pc {
+    margin-right: -100px;
+}
+
+.punteggio {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: system-ui;
+    font-size: 25px;
+    margin-top: -19px;
+    margin-left: 10px;
+    margin-right: 12px;
+    position: relative;
+    top: -29px;
+    color: #f4f2f1;
+    text-shadow: 1.5px 1.5px #0c0c0c;
+}
+
+.p {
+   justify-content: space-around;
+    display: flex;
+    margin-left: 555px;
+    margin-top: 84px;
+    font-size: 80px;
+}
+
+.p2 {
+    justify-content: space-around;
+    display: flex;
+    margin-right: 552px;
+    font-size: 80px;
+}
+
+.sfondo {
+    background-image: url(./immagini/lavagnetta1.jpg);
+    display: flex;
+    justify-content: center;
+    margin-left: 508px;
+    height: 385px;
+    width: 263px;
+    align-items: center;
+    margin-top: -308px;
+    background-size: cover;
+}
+
+.set {
+    display: flex
+;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: system-ui;
+    margin-top: -230px;
+    margin-left: -12px;
+    color: #f4f2f1;
+    text-shadow: 1.5px 1.5px #0c0c0c;
+}
+
+.set1 {
+    justify-content: space-around;
+    display: flex;
+    margin-left: 571px;
+    margin-top: 97px;
+    font-size: 80px;
+}
+
+.set2 {
+    justify-content: space-around;
+    display: flex;
+    margin-right: 560px;
+    font-size: 80px;
+}
+
+
+.immagine {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -335px;
+}
+
+.messaggio {
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+
+label {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    border-radius: 200px;
+    margin-top: -115px;
+}
+
+.img {
+    border-radius: 0%;
+}
+
+.reset {
+    margin-bottom: 48px;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    font-size: medium;
+    font-family: fantasy;
+    border-right: 3.5px black solid;
+    border-bottom: 3.5px black solid;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.reset:hover {
+    margin-bottom: 49px;
+    background-color: black;
+    color: gray;
+    font-size: medium;
+    font-family: fantasy;
+    border-right: 2px gray solid;
+    border-bottom: 2px gray solid;
+}
+
+
+#toggleMusic {
+    position: fixed;
+    /* lo fissa nella pagina */
+    bottom: 20px;
+    /* distanza dal bordo inferiore */
+    right: 20px;
+    /* distanza dal bordo destro */
+    z-index: 1000;
+    /* sopra tutti gli altri elementi */
+    padding: 10px 15px;
+    /* dimensione interna del bottone */
+    font-size: 35px;
+    /* grandezza del testo */
+    border-radius: 8px;
+    /* angoli arrotondati */
+    cursor: pointer;
+    /* cursore a mano */
+    background-color: #cccccc00;
+    border: #ffe4c400;
+}
+
+#toggleMusic:hover {
+    background-color: #0200086b;
+    border-radius: 50px;
+    cursor: pointer;
+    border-right: 5px rgba(0, 0, 0, 0.553) solid;
+    border-bottom: 5px rgb(0, 0, 0, 0.553) solid;
+}
+
+.immagini1 {
+    animation: slideInLeft 0.8s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+.immagini2 {
+    animation: slideInRight 0.8s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+.popup-content {
+    background: #fff8dc;
+    border: 3px solid #ffcc00;
+    border-radius: 20px;
+    padding: 50px 100px;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Comic Sans MS", cursive;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: pop 0.1s ease-out;
+    transform: scale(0.8)
+}
+
+.popup-content::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.slide-in {
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.slide-in2 {
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.indietro {
+    background-image: url(immagini/indietro.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    margin-top: -60px;
+    border-radius: 55px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #cccccc00;
+    border: #ffe4c400;
+    
+}
+
+.indietro:hover {
+    background-color: #e5e3ea6b;
+    border-radius: 50px;
+    cursor: pointer;
+    border-right: 5px rgba(0, 0, 0, 0.553) solid;
+    border-bottom: 5px rgb(0, 0, 0, 0.553) solid;
+}

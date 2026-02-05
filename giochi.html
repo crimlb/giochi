@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORRA</title>
+    <link rel="stylesheet" href="giochi.css">
+    <script src="giochi.js"></script>
+</head>
+
+<body>
+    <div class="icone">
+        <img src="immagini/carta.jpg" width="60px" height="60px">
+        <img src="immagini/forbice.jpg" width="60px" height="60px">
+        <img src="immagini/sasso.jpg" width="60px" height="60px">
+    </div>
+    
+    <div><button class="indietro" onclick="indietro()"></button></div>
+    <div class="pulsanti">
+        <button class="bottoneCarta" onclick="scelta('carta')">CARTA</button>
+        <button class="bottoneForbice" onclick="scelta('forbice')">FORBICE</button>
+        <button class="bottoneSasso" onclick="scelta('sasso')">SASSO</button>
+    </div>
+
+    
+
+
+    <div class="risultato">
+
+        <button class="reset" onclick="resetTotale()">reset</button>
+
+
+    </div>
+
+    <div class="nomi">
+        <div><label class="tu" id="tu" for="risultatoTuo">TU</label>
+        </div>
+        <div><label class="pc" id="pc" for="risultatoPc">PC</label>
+        </div>
+    </div>
+
+    <div class="punteggio">
+        <div>
+            <p class="p" id="risultatoTuo">0</p>
+        </div>
+        <div>
+            <p class="p2" id="risultatoPc">0</p>
+        </div>
+    </div>
+
+
+    <div class="sfondo">
+    </div>
+
+    <div class="set">
+        <div>
+            <p id="set1" class="set1">0</p>
+        </div>
+        <div>
+            <p id="set2" class="set2">0</p>
+        </div>
+    </div>
+
+    <div class="immagine">
+        <div>
+
+            <img class="immagini1" id="imgUtente" src="" width="400" height="400" style="display: none;">
+        </div>
+        <div>
+
+            <img class="immagini2" id="imgPc" src="" width="400" height="400" style="display: none;">
+        </div>
+    </div>
+
+
+    <div id="messaggio" class="messaggio" style="font-size: 20px; font-weight: bold; margin-top: 20px;"></div>
+
+
+    <div id="popup" class="popup">
+        <div id="popup-content" class="popup-content">
+            <span id="popupText">
+
+            </span>
+            <span id="popupText2">
+                <img id="imgVincitore" src="" width="700" height="700" style="display: none; margin-top: 2px;">
+            </span>
+        </div>
+    </div>
+
+    <div id="popupFinale" class="popup">
+        <div id="popupFinale-content">
+            <p id="popupFinaleText"></p>
+        </div>
+    </div>
+
+    <div class="sottofondo">
+        <div><button class="volume" id="toggleMusic" onclick="musicaOnOff()">🔊</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
